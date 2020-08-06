@@ -1,0 +1,17 @@
+import smtplib
+from email.message import EmailMessage
+
+email=EmailMessage()
+email['from']= '          '
+email['to']='             '
+email['subject']='        '
+
+email.set_content('       ')
+
+with smtplib.SMTP(host='smtp.     ',port=587) as Smtp:
+
+ Smtp.ehlo()
+ Smtp.starttls()
+ Smtp.login('              ','              ')
+ Smtp.send_message(email)
+ print('it'\s done')
